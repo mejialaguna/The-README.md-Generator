@@ -108,9 +108,21 @@ const questions = [
         },        
         {
           type: "confirm",
-          name: "ConfirmAddProject",
-          message: "would you like to enter another project?",
-          default: false 
+          name: "confirmAcknowledgements",
+          message: "would you like add any Acknowledgements?",
+          default: true
+        },
+        {
+            type: "input",
+            name: "Acknowledgements",
+            message: "if you would like to add a Special thanks to some in specific",
+            when: ({confirmAcknowledgements}) => {
+                if (confirmAcknowledgements){
+                    return true;
+                } else {
+                    return false;
+                }
+            }
         }
      
     ];

@@ -1,24 +1,21 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+function renderLicenseBadge(license) {
+  
+}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   
 }
-// >* 
-// >* 
-
-// >* 
-// >* <a href="https://materializecss.com/">MATERIALIZE</a>
-// >* <a href="https://en.wikipedia.org/wiki/Wikipedia:API">WIKIPIDIA API</a>
-// >* <a href= "https://pokeapi.co/">POKE API</a>
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
-// "JavaScript", "HTML", "CSS", "ES6", "JQuery", "BootStrap", "node"
+function renderLicenseSection(license) {
+
+}
+
 function renderLanguages(array){
   let result = "";
   array.forEach(element => {
@@ -129,9 +126,8 @@ First off, thanks for taking the time to check out this app! Contributions are w
 ##   Acknowledgements
 <br>
 
-> A big thanks to those API who helped us make this app possible and to software libraries that make all our coding less time consuming.<br><br> 
-> Last but not least important , an enormous thanks and respect to all those who helped us on this projects [ T.A ].
-<br>
+> ${data.Acknowledgements}
+
 
 `;
 }
