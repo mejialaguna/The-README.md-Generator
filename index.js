@@ -151,11 +151,12 @@ function init() {
     inquirer.prompt(questions)
     .then (answers => {
         writeToFile("README.md", generateMarkdown(answers) )
+        console.log('readme created');
     } )
-    .then (err){
+    .catch( err => {
       console.log(err);
-      return;
-    }
+    })
+         
 }
 
 // // Function call to initialize app
