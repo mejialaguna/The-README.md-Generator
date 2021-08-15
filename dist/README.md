@@ -5,7 +5,7 @@
   
   <div align="center">
   
-  <h1 align="center">readme</h1>
+  <h1 align="center">The README.md-Generator</h1>
   <br/>
   <a href="#about"><strong>Explore the screenshots »</strong></a>
   <br/>
@@ -18,7 +18,7 @@
   <div align="center">
   <br/>
   
-[![code with hearth by GITHUB_USERNAME](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-GITHUB_mejialaguna-ff1414.svg?style=flat-square)](mejalaguna)[![License:](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
+  [![code with hearth by GITHUB_USERNAME](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-GITHUB_mejialaguna-ff1414.svg?style=flat-square)](https://mejialaguna.github.io/readmeGenerator/)[![License:](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
     
   </div>
   
@@ -34,15 +34,15 @@
   - [Authors & contributors](#authors--contributors)
   - [License](#License) 
   
-  </details>
+  </details>  
   
-  
-  ---
   <br/>
   
   ## About
+  ---
+
   <br/>
-  >1- test3
+  This application is designed to help developers, creating a quick, concise and professional README.md file, just by answering some questions related to their new project.
   
   <br/>
   <br/>
@@ -51,59 +51,76 @@
   <br/> 
   
   ----------------------------------------------------------------Home Page 
-  ldkavg
+  <img src="img/screensh.png">  <img src="img/screensh-2.png">
   
   </details>
   
   <br/>
   <br/>
   
+  
   ## Built With
+  ---
+
   <br/>
   
   
  >* <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API">JAVA SCRIPT</a>
+ >* <a href="https://www.w3schools.com/js/js_es6.asp">ES6</a>
   
   
   <br/>
   <br/>
   
   ##  Installation
+  ---
+
   <br/>
   
-  fallow
+  install node js  <a href="https://nodejs.org/en/">Here</a> ,2.Install Inquirer Dependency <a href="https://www.npmjs.com/package/inquirer">[ Read Documentation here ]</a> ,  3.Clone this repo ${data.Clone}. , 4. Run node index inside your terminal. , 5. Answer all the question. , 6. Check the dist Folder , that will be the location if your newly created readme file. , 7. Enjoy.
   
   <br/>
   <br/>
   
   
   ##  Authors & contributors
+  ---
+
   <br/>
   
   First off, thanks for taking the time to check out this app! Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make will benefit everybody else and are **greatly appreciated**.
   <br/>
   
-  > 1- JLML
+  JLML
   
   <br/>
   <br/>
   
   ##   Acknowledgements
+  ---
+
   <br/>
   
-  undefined
+  First off, thanks for taking the time to check out this app! Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make will benefit everybody else and are **greatly appreciated**.
+  ---
+
   <br/>
   <br/>
   
-   ## License
-  <br/>
-  
+  ## License
+  ---
+
+     
+
   [![License:](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
-  renderLicenseBadge(license)
-  
-  
+
   <br/>
-  <br/>
+
   
-  <a href="https://github.com/mejialaguna/readme/issues/2">Ask a Question</a>
+    
+   
+
+
+  
+  <a href="https://github.com/mejialaguna/The README.md-Generator/issues/2">For any Question please click here...</a>
   

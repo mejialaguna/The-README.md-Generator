@@ -55,7 +55,7 @@ const questions = [
                 if(nameInput){
                     return true;
                 } else {
-                    console.log('its important to add a way to show how your app works to helo other users');
+                    console.log('its important to add a way to show how your app works to help other users');
                     return false;
                 }
             }
@@ -64,7 +64,7 @@ const questions = [
           type: 'checkbox',
           name: 'languages',
           message: 'What did you build this project with? (Check all that apply)',
-          choices: ["JavaScript", "HTML", "CSS", "ES6", "JQuery", "BootStrap", "node" ]
+          choices: ["JavaScript", "HTML", "CSS", "ES6", "JQuery", "BootStrap", "Node,js" ]
         },
         {
             type: "input",
@@ -104,6 +104,19 @@ const questions = [
               return false;
             }
           }
+        },
+        {
+          type: "input",
+          name: "clone",
+          message: "please enter HTTPS CLONE link here. (required)",
+          validate : nameInput => {
+            if (nameInput){
+              return true;
+            } else{
+              console.log("please add your clone link")
+              return false;
+            }
+          } 
         },        
         {
             type: "list",

@@ -49,13 +49,12 @@ function renderLicenseSection(license) {
   if (license === "No license") {
     return '';
 } else {
-  return ` 
-  ## License
-  ---
+  return `   
+
+  ${renderLicenseBadge(license)}
 
   <br/>
 
-  ${renderLicenseBadge(license)}  
   `
 }
 }
@@ -137,7 +136,7 @@ function generateMarkdown(data) {
   ---
 
   <br/>
-  >1- ${data.description}
+  ${data.description}
   
   <br/>
   <br/>
@@ -180,11 +179,8 @@ function generateMarkdown(data) {
   ---
 
   <br/>
-  
-  First off, thanks for taking the time to check out this app! Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make will benefit everybody else and are **greatly appreciated**.
-  <br/>
-  
-  > 1- ${data.contributors}
+   
+  ${data.contributors}
   
   <br/>
   <br/>
@@ -200,10 +196,14 @@ function generateMarkdown(data) {
   <br/>
   <br/>
   
+  ## License
+  ---
+
   ${renderLicenseSection(data.license)}
     
-  <br/>
-  <br/>
+   
+
+
   
   <a href="https://github.com/${data.username}/${data.project}/issues/2">For any Question please click here...</a>
   `;
