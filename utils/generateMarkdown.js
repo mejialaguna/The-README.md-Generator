@@ -126,6 +126,7 @@ function generateMarkdown(data) {
   - [Installation](#installation)
   - [Usage](#usage)
   - [Authors & contributors](#authors--contributors)
+  - [Acknowledgements](#Acknowledgements)
   - [License](#License) 
   
   </details>  
@@ -170,7 +171,7 @@ function generateMarkdown(data) {
   <br/>
   
   ${data.installation}
-  
+
   <br/>
   <br/>
   
@@ -196,14 +197,10 @@ function generateMarkdown(data) {
   <br/>
   <br/>
   
-  ## License
+  ##  License
   ---
 
   ${renderLicenseSection(data.license)}
-    
-   
-
-
   
   <a href="https://github.com/${data.username}/${data.project}/issues/2">For any Question please click here...</a>
   `;

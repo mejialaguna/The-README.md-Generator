@@ -5,7 +5,7 @@
   
   <div align="center">
   
-  <h1 align="center">The README.md-Generator</h1>
+  <h1 align="center">The-README.md-Generator</h1>
   <br/>
   <a href="#about"><strong>Explore the screenshots »</strong></a>
   <br/>
@@ -30,8 +30,8 @@
   - [About](#about)
   - [Built With](#built-with)
   - [Installation](#installation)
-  - [Usage](#usage)
   - [Authors & contributors](#authors--contributors)
+  - [Acknowledgements](#Acknowledgements)
   - [License](#License) 
   
   </details>  
@@ -42,7 +42,7 @@
   ---
 
   <br/>
-  This application is designed to help developers, creating a quick, concise and professional README.md file, just by answering some questions related to their new project.
+  This application is designed to help developers, creating a quick, concise and professional README.md file, just by answering some questions related to their new project
   
   <br/>
   <br/>
@@ -50,8 +50,10 @@
   <summary>Usage Screenshots and Demo</summary>
   <br/> 
   
-  ----------------------------------------------------------------Home Page 
-  <img src="img/screensh.png">  <img src="img/screensh-2.png">
+  
+  <img src="img/screensh.png"/> 
+  <img src="img/screensh-2.png"/>
+  <img src="img/Pages.mp4">
   
   </details>
   
@@ -77,8 +79,14 @@
 
   <br/>
   
-  install node js  <a href="https://nodejs.org/en/">Here</a> ,2.Install Inquirer Dependency <a href="https://www.npmjs.com/package/inquirer">[ Read Documentation here ]</a> ,  3.Clone this repo ${data.Clone}. , 4. Run node index inside your terminal. , 5. Answer all the question. , 6. Check the dist Folder , that will be the location if your newly created readme file. , 7. Enjoy.
-  
+   1. Install node js Here 
+   2. Install Inquirer Dependency <a href="https://www.npmjs.com/package/inquirer">[ Read Documentation here ]</a>
+   3. Clone this repo https://github.com/mejialaguna/readmeGenerator.git .
+   4. Run node index inside your terminal. 
+   5. Answer all the question. 
+   6. Check the dist Folder , that will be the location if your newly created readme file. 
+   7. Enjoy.[ https://mejialaguna.github.io/readmeGenerator/ ]
+
   <br/>
   <br/>
   
@@ -87,21 +95,18 @@
   ---
 
   <br/>
-  
-  First off, thanks for taking the time to check out this app! Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make will benefit everybody else and are **greatly appreciated**.
-  <br/>
-  
-  JLML
+   
+  Jose Luis Mejia Laguna.
   
   <br/>
   <br/>
   
-  ##   Acknowledgements
+  ## Acknowledgements
   ---
 
   <br/>
   
-  First off, thanks for taking the time to check out this app! Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make will benefit everybody else and are **greatly appreciated**.
+  First off, thanks for taking the time to check out this app! Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make will benefit everybody else and are greatly appreciated.
   ---
 
   <br/>
@@ -109,18 +114,13 @@
   
   ## License
   ---
-
-     
+  <br/>
 
   [![License:](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
 
   <br/>
 
   
-    
-   
-
-
   
-  <a href="https://github.com/mejialaguna/The README.md-Generator/issues/2">For any Question please click here...</a>
+  <a href="https://github.com/mejialaguna/The-README.md-Generator/issues/2">For any Question please click here...</a>
   
