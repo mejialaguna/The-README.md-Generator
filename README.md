@@ -53,7 +53,7 @@
   
   <img src="img/screensh.png"/> 
   <img src="img/screensh-2.png"/>
-  <img src="img/Pages.mp4">
+  <img src="img/gif.gif">
   
   </details>
   
