@@ -6,19 +6,19 @@
   <div align="center">
   
   <h1 align="center">readme</h1>
-  <br />
+  <br/>
   <a href="#about"><strong>Explore the screenshots »</strong></a>
-  <br />
-  <br />
+  <br/>
+  <br/>
   
   </div>
   
   
   
   <div align="center">
-  <br />
+  <br/>
   
-PRs welcome[![code with hearth by GITHUB_USERNAME](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-GITHUB_mejialaguna-ff1414.svg?style=flat-square)](mejialguana)[![License: MIT]([![License]https://img.shields.io/badge/License-MIT-yellow.svg])](https://opensource.org/licenses/MIT)
+[![code with hearth by GITHUB_USERNAME](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-GITHUB_mejialaguna-ff1414.svg?style=flat-square)](mejalaguna)[![License:](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
     
   </div>
   
@@ -42,7 +42,7 @@ PRs welcome[![code with hearth by GITHUB_USERNAME](https://img.shields.io/badge/
   
   ## About
   <br/>
-  >1- test
+  >1- test3
   
   <br/>
   <br/>
@@ -51,7 +51,7 @@ PRs welcome[![code with hearth by GITHUB_USERNAME](https://img.shields.io/badge/
   <br/> 
   
   ----------------------------------------------------------------Home Page 
-  lksndfoksa
+  ldkavg
   
   </details>
   
@@ -61,7 +61,7 @@ PRs welcome[![code with hearth by GITHUB_USERNAME](https://img.shields.io/badge/
   ## Built With
   <br/>
   
-  >1- 
+  
  >* <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API">JAVA SCRIPT</a>
   
   
@@ -83,7 +83,7 @@ PRs welcome[![code with hearth by GITHUB_USERNAME](https://img.shields.io/badge/
   First off, thanks for taking the time to check out this app! Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make will benefit everybody else and are **greatly appreciated**.
   <br/>
   
-  > 1- JLM
+  > 1- JLML
   
   <br/>
   <br/>
@@ -91,14 +91,19 @@ PRs welcome[![code with hearth by GITHUB_USERNAME](https://img.shields.io/badge/
   ##   Acknowledgements
   <br/>
   
-  ## undefined
+  undefined
   <br/>
   <br/>
+  
    ## License
-  https://opensource.org/licenses/MIT
+  <br/>
+  
+  [![License:](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
+  renderLicenseBadge(license)
+  
   
   <br/>
   <br/>
   
-  <a href="https://github.com/mejialaguna.join("/")readme.join(/issues/2)">Ask a Question</a>
+  <a href="https://github.com/mejialaguna/readme/issues/2">Ask a Question</a>
   

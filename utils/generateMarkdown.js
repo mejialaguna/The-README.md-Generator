@@ -7,16 +7,16 @@ function renderLicenseBadge(license) {
     return '';
   }
   else if (license === "GNU GPLv3" ) {
-    return `[![License]https://opensource.org/licenses/${license.slice(4 , license.length -1)}-blue.svg)]`;
+    return `[![License:]https://opensource.org/licenses/${license.slice(4 , license.length -1)}-blue.svg)](${renderLicenseLink(license)})`;
   }
   else if (license === "MIT"){
-    return `[![License]https://img.shields.io/badge/License-${license}-yellow.svg]`;
+    return `[![License:]https://img.shields.io/badge/License-${license}-yellow.svg](${renderLicenseLink(license)})`;
   }
   else if (license === "Apache 2.0"){
-    return `[![License](https://img.shields.io/badge/License-${license.replace(" ", "%20")}-blue.svg)]`;
+    return `[![License:](https://img.shields.io/badge/License-${license.replace(" ", "%20")}-blue.svg)](${renderLicenseLink(license)})`;
   }
   else if(license === "Mozilla 2.0"){
-    return `[![License](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)];`;
+    return `[![License:](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](${renderLicenseLink(license)})`;
   }
 
   
@@ -49,8 +49,14 @@ function renderLicenseSection(license) {
   if (license === "No license") {
     return '';
 } else {
-  return ` ## License
-  ${renderLicenseLink(license)}`
+  return ` 
+  ## License
+  ---
+
+  <br/>
+
+  ${renderLicenseBadge(license)}  
+  `
 }
 }
 
@@ -95,19 +101,19 @@ function generateMarkdown(data) {
   <div align="center">
   
   <h1 align="center">${data.project}</h1>
-  <br />
+  <br/>
   <a href="#about"><strong>Explore the screenshots »</strong></a>
-  <br />
-  <br />
+  <br/>
+  <br/>
   
   </div>
   
   
   
   <div align="center">
-  <br />
+  <br/>
   
-PRs welcome[![code with hearth by GITHUB_USERNAME](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-GITHUB_${data.username}-ff1414.svg?style=flat-square)](${data.link})[![License: ${data.license}](${renderLicenseBadge(data.license)})](${renderLicenseLink(data.license)})
+  [![code with hearth by GITHUB_USERNAME](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-GITHUB_${data.username}-ff1414.svg?style=flat-square)](${data.link})${renderLicenseBadge(data.license)}
     
   </div>
   
@@ -123,13 +129,13 @@ PRs welcome[![code with hearth by GITHUB_USERNAME](https://img.shields.io/badge/
   - [Authors & contributors](#authors--contributors)
   - [License](#License) 
   
-  </details>
+  </details>  
   
-  
-  ---
   <br/>
   
   ## About
+  ---
+
   <br/>
   >1- ${data.description}
   
@@ -147,16 +153,21 @@ PRs welcome[![code with hearth by GITHUB_USERNAME](https://img.shields.io/badge/
   <br/>
   <br/>
   
+  
   ## Built With
+  ---
+
   <br/>
   
-  >1- ${renderLanguages(data.languages)}
+  ${renderLanguages(data.languages)}
   
   
   <br/>
   <br/>
   
   ##  Installation
+  ---
+
   <br/>
   
   ${data.installation}
@@ -166,6 +177,8 @@ PRs welcome[![code with hearth by GITHUB_USERNAME](https://img.shields.io/badge/
   
   
   ##  Authors & contributors
+  ---
+
   <br/>
   
   First off, thanks for taking the time to check out this app! Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make will benefit everybody else and are **greatly appreciated**.
@@ -177,17 +190,22 @@ PRs welcome[![code with hearth by GITHUB_USERNAME](https://img.shields.io/badge/
   <br/>
   
   ##   Acknowledgements
+  ---
+
   <br/>
   
-  ## ${data.Acknowledgements}
+  ${data.Acknowledgements}
+  ---
+
   <br/>
   <br/>
+  
   ${renderLicenseSection(data.license)}
-  
+    
   <br/>
   <br/>
   
-  <a href="https://github.com/${data.username}.join("/")${data.project}.join(/issues/2)">Ask a Question</a>
+  <a href="https://github.com/${data.username}/${data.project}/issues/2">For any Question please click here...</a>
   `;
 }
   
