@@ -107,7 +107,7 @@ function generateMarkdown(data) {
   <div align="center">
   <br />
   
-  ![PRs welcome][![code with hearth by GITHUB_USERNAME](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-GITHUB_${data.username}-ff1414.svg?style=flat-square)](${data.link})[![License: ${data.license}](${renderLicenseBadge(data.license)})](${renderLicenseLink(data.license)})
+PRs welcome[![code with hearth by GITHUB_USERNAME](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-GITHUB_${data.username}-ff1414.svg?style=flat-square)](${data.link})[![License: ${data.license}](${renderLicenseBadge(data.license)})](${renderLicenseLink(data.license)})
     
   </div>
   

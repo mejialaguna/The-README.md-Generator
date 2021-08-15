@@ -5,7 +5,7 @@
   
   <div align="center">
   
-  <h1 align="center">README</h1>
+  <h1 align="center">readme</h1>
   <br />
   <a href="#about"><strong>Explore the screenshots »</strong></a>
   <br />
@@ -18,7 +18,7 @@
   <div align="center">
   <br />
   
-  ![PRs welcome][![code with hearth by GITHUB_USERNAME](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-GITHUB_mejialaguna-ff1414.svg?style=flat-square)](mejialaguna)[![License: Mozilla 2.0](undefined)](undefined)
+PRs welcome[![code with hearth by GITHUB_USERNAME](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-GITHUB_mejialaguna-ff1414.svg?style=flat-square)](mejialguana)[![License: MIT]([![License]https://img.shields.io/badge/License-MIT-yellow.svg])](https://opensource.org/licenses/MIT)
     
   </div>
   
@@ -42,7 +42,7 @@
   
   ## About
   <br/>
-  >1- TEST
+  >1- test
   
   <br/>
   <br/>
@@ -51,7 +51,7 @@
   <br/> 
   
   ----------------------------------------------------------------Home Page 
-  kjadng
+  lksndfoksa
   
   </details>
   
@@ -83,7 +83,7 @@
   First off, thanks for taking the time to check out this app! Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make will benefit everybody else and are **greatly appreciated**.
   <br/>
   
-  > 1- JLML
+  > 1- JLM
   
   <br/>
   <br/>
@@ -95,10 +95,10 @@
   <br/>
   <br/>
    ## License
-  undefined
+  https://opensource.org/licenses/MIT
   
   <br/>
   <br/>
   
-  <a href="https://github.com/mejialaguna.join("/")README.join(/issues/2)">Ask a Question</a>
+  <a href="https://github.com/mejialaguna.join("/")readme.join(/issues/2)">Ask a Question</a>
   

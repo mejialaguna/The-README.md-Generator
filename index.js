@@ -106,7 +106,7 @@ const questions = [
           }
         },        
         {
-            type: "checkbox",
+            type: "list",
             name: "license",
             message: "what type of license would you like?",
             choices: ["Mozilla 2.0", "Apache 2.0", "MIT", "GNU GPLv3", "No license"],
