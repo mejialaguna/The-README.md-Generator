@@ -9,7 +9,7 @@ const generateMarkdown = require("./utils/generateMarkdown")
 const questions = [
         {          
           type: 'input',
-          name: 'title',
+          name: 'project',
           message: 'What is the name of your project?',
           validate: nameInput => {
             if(nameInput){
@@ -36,7 +36,7 @@ const questions = [
         {
             type: "input",
             name: "installation",
-            message: "Please fallow instruction on how to installed",
+            message: "Instruction on how to installed",
             validate: nameInput =>{
                 if(nameInput){
                     return true;
@@ -91,12 +91,25 @@ const questions = [
               return false;
             }
           }
+        },
+        {
+          type: "input",
+          name: "username",
+          message: "please enter GitHub username. (required)",
+          validate : nameInput => {
+            if (nameInput){
+              return true;
+            } else{
+              console.log("please add your user name ")
+              return false;
+            }
+          }
         },        
         {
             type: "checkbox",
-            name: "license type",
+            name: "license",
             message: "what type of license would you like?",
-            choices: ["Mozilla Public license", "Apache License", "MIT License", "GNU LGPLv3"],
+            choices: ["Mozilla Public license", "Apache License", "MIT License", "GNU LGPLv3", "No license"],
             validate: choices => {
                 if(choices){
                     return true;
@@ -115,7 +128,7 @@ const questions = [
         {
             type: "input",
             name: "Acknowledgements",
-            message: "if you would like to add a Special thanks to some in specific",
+            message: "if you would like to add a Special thanks to someone in specific",
             when: ({confirmAcknowledgements}) => {
                 if (confirmAcknowledgements){
                     return true;
@@ -128,18 +141,22 @@ const questions = [
     ];
 
 // TODO: Create a function to write README file
-function writeToFile(data) {
-return fs.writeFileSync(path.join(__dirname, "/yourReadme/README.md"), data )
+function writeToFile(fileName ,data) {
+return fs.writeFileSync(path.join(__dirname, "/dist/README.md"), (fileName , data)  )
 }
 
 
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions)
-    .then( answers => {
-        writeToFile(`${}`)
+    .then (answers => {
+        writeToFile("README.md", generateMarkdown(answers) )
     } )
+    .then (err){
+      console.log(err);
+      return;
+    }
 }
 
-// Function call to initialize app
+// // Function call to initialize app
 init();

@@ -1,19 +1,37 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
+  if (license === "No License") {
+    return '';
+  } else {
+    return `
+    [![License](https://img.shields.io/badge/License-${license}-blue.svg)]
+  `;
+  }
+
   
-}
+};
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  
+  if (license === "No license") {
+    return '';
+  } else if (license === "apache") {
+    return `
+    https://opensource.org/licenses/${license}
+  `;
+  }
 }
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-
+  if (license === "No license") {
+    return '';
+} else {
+  return ` ## License ${license}`
+}
 }
 
 function renderLanguages(array){
@@ -51,25 +69,28 @@ function renderLanguages(array){
 function generateMarkdown(data) {
   return `# ${data.title}
 
+<h1 align="center"> ${data.project}</h1>
+
 
 <div align="center">
 <br />
 
-  ![PRs welcome](https://img.shields.io/badge/PRs-welcome-ff69b4.svg?style=flat-square)
-  [![code with hearth by GITHUB_USERNAME](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-GITHUB_${data.link}-ff1414.svg?style=flat-square)](${data.link})
-
-</div>
-
-<br>
+// [![code with hearth by GITHUB_USERNAME](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-GITHUB_${data.username}-ff1414.svg?style=flat-square)](${data.link})
+  ![PRs welcome] ${renderLicenseBadge(data.license)} 
+  ${renderLicenseSection(data.license)}
+  ${renderLicenseLink(data.license)}
+  </div>
+  
+  <br>
 
   <details open="open">
-<summary>Table of Contents</summary>
-
-- [About](#about)
-- [Built With](#built-with)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Authors & contributors](#authors--contributors)
+  <summary>Table of Contents</summary>
+  
+  - [About](#about)
+  - [Built With](#built-with)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Authors & contributors](#authors--contributors)
 
 
 </details>
@@ -133,3 +154,4 @@ First off, thanks for taking the time to check out this app! Contributions are w
 }
 
 module.exports = generateMarkdown;
+
