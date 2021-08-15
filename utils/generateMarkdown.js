@@ -1,12 +1,22 @@
+
+
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license === "No License") {
     return '';
-  } else {
-    return `
-    [![License](https://img.shields.io/badge/License-${license}-blue.svg)]
-  `;
+  }
+  else if (license === "GNU GPLv3" ) {
+    return `[![License]https://opensource.org/licenses/.split(GNU)${data.license}-blue.svg)]`;
+  }
+  else if (license === "MIT"){
+    return `[![License]https://img.shields.io/badge/License-${data.license}-yellow.svg]`;
+  }
+  else if (license === "Apache 2.0"){
+    return `[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)]`;
+  }
+  else if(license === "Mozilla 2.0"){
+    return `[![License](https://img.shields.io/badge/License-.split(${data.license}).join("MPL%202.0")-brightgreen.svg)]; `;
   }
 
   
@@ -19,8 +29,17 @@ function renderLicenseLink(license) {
     return '';
   } else if (license === "apache") {
     return `
-    https://opensource.org/licenses/${license}
+    https://opensource.org/licenses/${data.license}
   `;
+  }
+  else if (license === "GNU GPLv3"){
+    return `https://opensource.org/licenses/.split(GNU)${data.license}`
+  }
+  else if (license === "MIT"){
+    return `https://opensource.org/licenses/${data.license}`
+  }
+  else if (license === "Mozilla") {
+    return `https://opensource.org/licenses/${data.license}`
   }
 }
 
@@ -30,7 +49,8 @@ function renderLicenseSection(license) {
   if (license === "No license") {
     return '';
 } else {
-  return ` ## License ${license}`
+  return ` ## License
+  ${renderLicenseLink(data.license)}`
 }
 }
 
@@ -68,21 +88,35 @@ function renderLanguages(array){
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
-
-<h1 align="center"> ${data.project}</h1>
-
-
-<div align="center">
-<br />
-
-// [![code with hearth by GITHUB_USERNAME](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-GITHUB_${data.username}-ff1414.svg?style=flat-square)](${data.link})
-  ![PRs welcome] ${renderLicenseBadge(data.license)} 
-  ${renderLicenseSection(data.license)}
-  ${renderLicenseLink(data.license)}
+  
+  
+  <br>
+  <br>
+  
+  <div align="center">
+  
+  <h1 align="center"> ${data.project}</h1>
+  <br />
+  <a href="#about"><strong>Explore the screenshots »</strong></a>
+  <br />
+  <br />
+  
+  </div>
+  
+  
+  
+  
+  <div align="center">
+  <br />
+  
+  ![PRs welcome][![code with hearth by GITHUB_USERNAME](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-GITHUB_${data.username}-ff1414.svg?style=flat-square)](${data.link})[![License: ${data.license}](${renderLicenseBadge(data.license)})](${renderLicenseLink(data.license)})
+  
+  
+  
   </div>
   
   <br>
-
+  
   <details open="open">
   <summary>Table of Contents</summary>
   
@@ -91,67 +125,75 @@ function generateMarkdown(data) {
   - [Installation](#installation)
   - [Usage](#usage)
   - [Authors & contributors](#authors--contributors)
-
-
-</details>
-
-
----
-<br>
-
-## About
-<br>
-${data.description}
-
-<br>
-<br>
-<details>
-<summary>Usage Screenshots and Demo</summary>
-<br>
-
-
-Home Page 
-${data.usage}
-
-</details>
-<br>
-<br>
-
-## Built With
-<br>
-
-${renderLanguages(data.languages)}
-<br>
-<br>
-
-##  Installation
-<br>
-
-${data.installation}
-
-<br>
-<br>
-
-
-##  Authors & contributors
-<br>
-
-First off, thanks for taking the time to check out this app! Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make will benefit everybody else and are **greatly appreciated**.
-<br>
-
-> 1- ${data.contributors}
-
-<br>
-<br>
-
-##   Acknowledgements
-<br>
-
-> ${data.Acknowledgements}
-
-
-`;
+  
+  
+  </details>
+  
+  
+  ---
+  <br>
+  
+  ## About
+  <br>
+  >1- ${data.description}
+  
+  <br>
+  <br>
+  <details>
+  <summary>Usage Screenshots and Demo</summary>
+  <br>
+  
+  
+  ----------------------------------------------------------------Home Page 
+  ${data.usage}
+  
+  </details>
+  <br>
+  <br>
+  
+  ## Built With
+  <br>
+  
+  >1- ${renderLanguages(data.languages)}
+  
+  
+  <br>
+  <br>
+  
+  ##  Installation
+  <br>
+  
+  ${data.installation}
+  
+  <br>
+  <br>
+  
+  
+  ##  Authors & contributors
+  <br>
+  
+  First off, thanks for taking the time to check out this app! Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make will benefit everybody else and are **greatly appreciated**.
+  <br>
+  
+  > 1- ${data.contributors}
+  
+  <br>
+  <br>
+  
+  ##   Acknowledgements
+  <br>
+  
+  ## ${data.Acknowledgements}
+  <br>
+  <br>
+  ${renderLicenseSection(data.license)}
+  
+  <br>
+  <br>
+  
+  <a href="${data.username}${data.project}.join(issues/2)">Ask a Question</a>
+  `;
 }
-
-module.exports = generateMarkdown;
+  
+  module.exports = generateMarkdown;
 

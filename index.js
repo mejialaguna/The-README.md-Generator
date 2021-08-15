@@ -95,7 +95,7 @@ const questions = [
         {
           type: "input",
           name: "username",
-          message: "please enter GitHub username. (required)",
+          message: "please enter your GitHub username. (required)",
           validate : nameInput => {
             if (nameInput){
               return true;
@@ -109,7 +109,7 @@ const questions = [
             type: "checkbox",
             name: "license",
             message: "what type of license would you like?",
-            choices: ["Mozilla Public license", "Apache License", "MIT License", "GNU LGPLv3", "No license"],
+            choices: ["Mozilla 2.0", "Apache 2.0", "MIT", "GNU GPLv3", "No license"],
             validate: choices => {
                 if(choices){
                     return true;
