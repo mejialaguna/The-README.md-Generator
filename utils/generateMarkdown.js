@@ -7,10 +7,10 @@ function renderLicenseBadge(license) {
     return '';
   }
   else if (license === "GNU GPLv3" ) {
-    return `[![License:]https://opensource.org/licenses/${license.slice(4 , license.length -1)}-blue.svg)](${renderLicenseLink(license)})`;
+    return `[![License:](https://img.shields.io/badge/License-${license.replace("GNU ","")}-blue.svg)](${renderLicenseLink(license)})`;
   }
   else if (license === "MIT"){
-    return `[![License:]https://img.shields.io/badge/License-${license}-yellow.svg](${renderLicenseLink(license)})`;
+    return `[![License:](https://img.shields.io/badge/License-${license}-yellow.svg)](${renderLicenseLink(license)})`;
   }
   else if (license === "Apache 2.0"){
     return `[![License:](https://img.shields.io/badge/License-${license.replace(" ", "%20")}-blue.svg)](${renderLicenseLink(license)})`;
@@ -33,7 +33,7 @@ function renderLicenseLink(license) {
   `;
   }
   else if (license === "GNU GPLv3"){
-    return `https://opensource.org/licenses/${license.slice(4 , license.length -1)}`
+    return `https://opensource.org/licenses/${license.replace("GNU ","")}`
   }
   else if (license === "MIT"){
     return `https://opensource.org/licenses/MIT`

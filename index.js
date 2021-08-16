@@ -105,19 +105,19 @@ const questions = [
             }
           }
         },
-        {
-          type: "input",
-          name: "clone",
-          message: "please enter HTTPS CLONE link here. (required)",
-          validate : nameInput => {
-            if (nameInput){
-              return true;
-            } else{
-              console.log("please add your clone link")
-              return false;
-            }
-          } 
-        },        
+        // {
+        //   type: "input",
+        //   name: "clone",
+        //   message: "please enter HTTPS CLONE link here. (required)",
+        //   validate : nameInput => {
+        //     if (nameInput){
+        //       return true;
+        //     } else{
+        //       console.log("please add your clone link")
+        //       return false;
+        //     }
+        //   } 
+        // },        
         {
             type: "list",
             name: "license",
