@@ -85,7 +85,7 @@
    4. Run node index inside your terminal. 
    5. Answer all the question. 
    6. Check the dist Folder , that will be the location if your newly created readme file. 
-   7. Enjoy.[ https://mejialaguna.github.io/readmeGenerator/ ]
+   7. <a href="https://github.com/mejialaguna/The-README.md-Generator/blob/main/img/gif.gif">click here to Enjoy the video.</a>
 
   <br/>
   <br/>
